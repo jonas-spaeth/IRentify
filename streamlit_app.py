@@ -37,7 +37,7 @@ if len(peaks) > 0:
 
     st.markdown("---")
 
-
+    print(counts_sorted)
 
     if len(counts_sorted) > 0:
         analyze_drug = counts_sorted.index[0]
