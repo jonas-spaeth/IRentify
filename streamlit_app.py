@@ -12,10 +12,9 @@ matplotlib.use('Agg')
 st.header("IR Spectra Identify")
 
 label = 'Tolerance?'
-tolerance = st.number_input('tolerance (must be larger 0', min_value=1, value=5)
+tolerance = st.number_input('Tolerance', min_value=1, value=5)
 
-peaks = "0"
-peaks = st.text_input('tolerance')
+peaks = st.text_input('Peaks')
 if len(peaks) > 0:
     peaks = [float(p.strip()) for p in peaks.split(',')]
 
